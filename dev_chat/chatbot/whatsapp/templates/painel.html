@@ -1,0 +1,12 @@
+<script>
+  const socket = new WebSocket('ws://localhost:8000/ws/chat/');
+
+  socket.onmessage = function(event) {
+      const data = JSON.parse(event.data);
+      console.log("Nova mensagem:", data);
+      // aqui você atualiza a interface
+  };
+</script>
+
+
+<h1>teste</h1>
